@@ -1,5 +1,3 @@
-const { Modal } = require("bootstrap");
-
 // Custom JS
 $(function(){
 
