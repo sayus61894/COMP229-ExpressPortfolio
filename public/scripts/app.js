@@ -42,5 +42,23 @@ $(function(){
     
     })
     
+    $('#java').on('click', function(){
+            $(".serviceCard").hide();
+            $('#javaCard').toggle();
+    })
 
+    $('#cSharp').on('click', function(){
+        $(".serviceCard").hide();
+        $('#cSharpCard').toggle();
+    })
+
+    $('#python').on('click', function(){
+        $(".serviceCard").hide();
+        $('#pythonCard').toggle();
+    })
+
+    $('.webDevGroup').on('click', function(){
+        $(".serviceCard").hide();
+        $('#webCard').toggle();
+    })
 });

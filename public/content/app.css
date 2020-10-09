@@ -22,5 +22,9 @@ footer{
     background-color: rgb(179, 184, 179) !important;
     color: white !important;
 }
+.serviceCard{
+    width: 40%;
+    display: none;
+}
 
 
