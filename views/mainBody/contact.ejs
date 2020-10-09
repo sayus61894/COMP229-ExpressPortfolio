@@ -1,0 +1,64 @@
+<!-- Using container to seperate main body into two portions -->
+<div class="container jumbotron">
+    <h1 class="display-4">hello</h1>
+    <hr>
+    <div class="row">
+        <!-- First column will be used to house the form -->
+        <div class="col">
+            <form>
+                <div class="row mb-3">
+                    <label class="col-4 col-form-label" for="firstName">First Name:</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="firstName" placeholder="Jane Doe" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-4 col-form-label" for="emailAdd">E-mail:</label>
+                    <div class="col-8">
+                        <input type="email" class="form-control" id="emailAdd" placeholder="john@doe.com" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-4 col-form-label" for="phoneNum">Phone Num:</label>
+                    <div class="col-8">
+                        <input type="tel" class="form-control" id="phoneNum" placeholder="xxx-xxx-xxxx">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-4 col-form-label" for="firstName">Comment/Question</label>
+                    <div class="col-8">
+                        <textarea class="form-control" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary col " type="submit">Submit</button>
+                    <button class="btn btn-primary col" type="reset">Reset</button>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Second Column is contact info -->
+        <div class="col-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Parth Patel</h2>
+                    <img src="#" alt="Portrait of myself">
+                    <h5 class="card-title">Contact Me</h5>
+                    <p class="card-text">If you have any questions, use the form on the side to get in touch with me.
+                         I will do my best to get back to you as soon as I can</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 text-right"><h6>Phone Number: </h6></div>
+                            <div class="col-8">647-123-4567</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-right"><h6>Email: </h6></div>
+                            <div class="col-8">ppate732@my.centennialcollege.ca</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
