@@ -1,3 +1,51 @@
-<nav class="navbar bg-secondary text-light">
-    <div class="nav-item">Trial</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-secondary">
+    <a href="#" class="navbar-brand text-light">
+        <img src="#" alt="Parth Patel Logo" height="30" width="30">
+        Parth Patel
+    </a>
+    <div class="collapse navbar-collapse float-right justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-secondary">
+            <!-- Home -->
+            <% if(title == "Home") { %>
+                <li class="nav-item active">
+            <% } else { %>
+                <li class="nav-item"></li>
+            <% } %>
+                <a class="nav-link" id="home" href="/"><i class="fas fa-laptop-house"> Home</i></a>
+            </li>
+            <!-- About Me -->
+            <% if(title == "About Me") { %>
+                <li class="nav-item active">
+            <% } else { %>
+                <li class="nav-item"></li>
+            <% } %>                
+                <a class="nav-link" id="aboutMe" href="/about"><i class="fas fa-user"> About Me</i></a>
+            </li>
+            <!-- Projects -->
+            <% if(title == "Projects") { %>
+                <li class="nav-item active">
+            <% } else { %>
+                <li class="nav-item"></li>
+            <% } %>                
+                <a class="nav-link" id="projects" href="/projects"><i class="fas fa-tasks"> Projects</i></a>
+            </li>
+            <!-- Services -->
+            <% if(title == "Services") { %>
+                <li class="nav-item active">
+            <% } else { %>
+                <li class="nav-item"></li>
+            <% } %>                
+                <a class="nav-link" id="services" href="/services"><i class="fas fa-concierge-bell"> Services</i></a>
+            </li>
+            <!-- Contact Me -->
+            <% if(title == "Contact Me") { %>
+                <li class="nav-item active">
+            <% } else { %>
+                <li class="nav-item"></li>
+            <% } %>                
+                <a class="nav-link" id="contactMe" href="/contact"><i class="fas fa-comments"> Contact Me</i></a>
+            </li>
+
+        </ul>
+      </div>
 </nav>
