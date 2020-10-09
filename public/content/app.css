@@ -1,1 +1,10 @@
 /* Custom CSS */
+
+.col-6{
+    text-align: center;
+}
+
+footer{
+    color: white;
+    text-align:  center
+}
