@@ -31,4 +31,11 @@ router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact Me' });
 });
 
+/* function to download resume */
+router.get('/about/download', function(req, res, next){
+/* Specify path to file that will be downloadable */
+  const file = "public/assets/other/ParthPatel-Resume.pdf"
+  res.download(file);
+});
+
 module.exports = router;

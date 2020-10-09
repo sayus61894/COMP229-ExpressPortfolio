@@ -24,7 +24,12 @@ footer{
 }
 .serviceCard{
     width: 40%;
+    padding-top: 1em;;
     display: none;
+}
+
+img.portrait{
+    width: 100%;
 }
 
 

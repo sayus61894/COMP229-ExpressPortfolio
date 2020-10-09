@@ -1,11 +1,11 @@
+
 // Custom JS
 $(function(){
-
-
-    $('#missionStatement').on('click', function(){
-        console.log("Mission Statement Clicked");
-    })
     
+    /* Trying to emulate the data-toggle function */
+
+    /* Clicking the first tab, removes the active tab from the others, and adds it to itself.
+        Then changes the display of the info windows to ensure that only the corresponding one is shown */ 
     $('#project01').on('click', function(){
         console.log("starting");
         $("#project02").removeClass('active');
@@ -16,7 +16,7 @@ $(function(){
         $('#proj02').css("display", "none");
         $('#proj03').css("display", "none");
     
-    })
+    });
 
     $('#project02').on('click', function(){
         console.log("starting");
@@ -28,7 +28,7 @@ $(function(){
         $('#proj01').css("display", "none");
         $('#proj03').css("display", "none");
     
-    })
+    });
 
     $('#project03').on('click', function(){
         console.log("starting");
@@ -40,25 +40,46 @@ $(function(){
         $('#proj02').css("display", 'none');
         $('#proj01').css("display","none");
     
-    })
+    });
+
+    /* Helper functions for the 'Packages' for the Service Page. Originally display is set to 'none'.
+        Clicking on a bar, will change the display of the corresponding 'package' thus showing it.
+        Before showing the corresponding package, any packages being shown are first hidden */
     
     $('#java').on('click', function(){
             $(".serviceCard").hide();
             $('#javaCard').toggle();
-    })
+    });
 
     $('#cSharp').on('click', function(){
         $(".serviceCard").hide();
         $('#cSharpCard').toggle();
-    })
+    });
 
     $('#python').on('click', function(){
         $(".serviceCard").hide();
         $('#pythonCard').toggle();
-    })
+    });
 
     $('.webDevGroup').on('click', function(){
         $(".serviceCard").hide();
         $('#webCard').toggle();
+    });
+
+    /* When Submit button for Contact Me page is clicked */
+
+    /* Checks to make sure that the three required fields hold values.
+        If not an alert pop ups that notifies the user that the form must still be filled out.
+        If form is filled out, an alert thanking them is shown, and they are redirected to the homepage. */
+    $("#submit").on('click', function(){
+        let firstName = document.getElementById("firstName");
+        let emailAdd = document.getElementById("emailAdd");
+        let comment = document.getElementById("comment");
+        if(firstName.value == "" || emailAdd == "" || comment.value == ""){
+            alert("Please fill out form before submitting!");
+        }else{
+            alert("Thank you for contacting me. I will get back to you shortly!");
+            window.location.href='/home';
+        }
     })
 });
