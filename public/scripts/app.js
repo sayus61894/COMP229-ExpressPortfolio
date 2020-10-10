@@ -77,15 +77,19 @@ $(function(){
     /* Checks to make sure that the three required fields hold values.
         If not an alert pop ups that notifies the user that the form must still be filled out.
         If form is filled out, an alert thanking them is shown, and they are redirected to the homepage. */
-    $("#submit").on('click', function(){
+    $("#enter").on('click', function(){
         let firstName = document.getElementById("firstName");
         let emailAdd = document.getElementById("emailAdd");
         let comment = document.getElementById("comment");
         if(firstName.value == "" || emailAdd == "" || comment.value == ""){
             alert("Please fill out form before submitting!");
         }else{
-            alert("Thank you for contacting me. I will get back to you shortly!");
-            window.location.href='/home';
+            alert("Thank you, I will get back to you soon!")
+            window.location.href = '/home';
+            /* Could not get above to work, StackOverflow suggested 'return false' .
+                LINK -> https://stackoverflow.com/questions/6109527/window-location-href-not-working-in-form-onsubmit */
+            return false;
         }
-    })
+
+    });
 });
